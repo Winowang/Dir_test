@@ -9,7 +9,9 @@ RUN apt-get update  \
     git \
     python \
     vim
-RUN export GIT_SSL_NO_VERIFY=1
-RUN git clone https://github.com/ethereon/netscope
 
-CMD ["cd netscope && python -m SimpleHTTPServer 6666"]
+RUN export GIT_SSL_NO_VERIFY=1
+RUN git config --global http.sslverify false
+
+RUN git clone https://github.com/ethereon/netscope
+#CMD ["cd netscope && python -m SimpleHTTPServer 6666"]
