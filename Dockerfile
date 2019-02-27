@@ -1,4 +1,4 @@
-from ubuntu:19.04
+FROM ubuntu:19.04
 
 LABEL maintainer="Netscope"
 
