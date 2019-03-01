@@ -23,5 +23,6 @@ RUN conda install --quite --yes mxnet=1.2.1 && \
 RUN conda install --yes \
           'opencv=3.4*'
 
-RUN pip install tensorboardX
+RUN install mxboard 
+#RUN pip install tensorboardX
 #RUN pip install git+https://github.com/lanpa/tensorboardX
