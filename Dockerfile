@@ -12,7 +12,7 @@ USER root
 #    'qt=5.9.*' \
 #    'pyqt=5.9.*'
 
-RUN conda install --quite --yes mxnet=1.2.1 && \
+RUN conda install --quiet --yes mxnet=1.2.1 && \
 #    conda remove --quiet --yes --force qt pyqt && \
     conda clean -tipsy && \
     npm cache clean --force && \
