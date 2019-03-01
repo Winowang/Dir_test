@@ -12,9 +12,10 @@ USER root
 #    'qt=5.9.*' \
 #    'pyqt=5.9.*'
 
-RUN conda install --quiet --yes mxnet=1.2.1 && \
+#RUN conda install --quiet --yes mxnet=1.2.1 && \
 #    conda remove --quiet --yes --force qt pyqt && \
-    conda clean -tipsy && \
+
+RUN conda clean -tipsy && \
     npm cache clean --force && \
     rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
     rm -rf /home/.cache/yarn && \
@@ -26,6 +27,12 @@ RUN conda install --yes \
           'opencv=3.4*' \
           'protobuf' 
 
+RUN pip install mxnet-cu92
+RUN pip install graphviz
+RUN pip install numpy
+RUN pip install mxnet
+
 RUN pip install mxboard 
+
 #RUN pip install tensorboardX
 #RUN pip install git+https://github.com/lanpa/tensorboardX
