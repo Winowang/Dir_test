@@ -21,7 +21,8 @@ RUN conda install --quite --yes mxnet=1.2.1 && \
     rm -rf /home/.node-gyp
     
 RUN conda install --yes \
-          'opencv=3.4*'
+          'opencv=3.4*' \
+          'protobuf' 
 
 RUN install mxboard 
 #RUN pip install tensorboardX
