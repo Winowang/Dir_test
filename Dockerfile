@@ -27,11 +27,11 @@ RUN conda install --yes \
           'opencv=3.4*' \
           'protobuf' 
 
-RUN pip install mxnet-cu92
-RUN pip install mxnet-cu92mkl
+#RUN pip install mxnet-cu92
 RUN pip install graphviz
 RUN pip install numpy
-RUN pip install mxnet
+RUN pip install mxnet-cu92mkl
+#RUN pip install mxnet
 
 RUN pip install mxboard 
 
