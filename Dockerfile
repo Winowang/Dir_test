@@ -28,6 +28,7 @@ RUN conda install --yes \
           'protobuf' 
 
 RUN pip install mxnet-cu92
+RUN pip install mxnet-cu92mkl
 RUN pip install graphviz
 RUN pip install numpy
 RUN pip install mxnet
