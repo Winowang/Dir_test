@@ -4,7 +4,7 @@
 FROM winowang/jupyter_gpu:latest
 #FROM winowang/dockerfile_test:cuda92-latest
 
-LABEL maintainer="Jupyter Pytorch"
+LABEL maintainer="Jupyter Mxnet"
 
 USER root
 
