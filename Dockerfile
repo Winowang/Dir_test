@@ -1,7 +1,7 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
 #FROM winowang/jupyter_images:jupyter-latest
-FROM winowang/jupyter_gpu:latest
+FROM winowang/jupyter_gpu:cuda9.2-latest
 #FROM winowang/dockerfile_test:cuda92-latest
 
 LABEL maintainer="Jupyter Mxnet"
