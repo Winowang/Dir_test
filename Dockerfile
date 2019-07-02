@@ -16,7 +16,7 @@ USER root
 #    conda remove --quiet --yes --force qt pyqt && \
 
 RUN conda clean -tipsy && \
-    npm cache clean --force && \
+    #npm cache clean --force && \
     rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
     rm -rf /home/.cache/yarn && \
     rm -rf /home/.node-gyp
