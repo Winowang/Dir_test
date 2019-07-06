@@ -1,7 +1,8 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
 #FROM winowang/jupyter_images:jupyter-latest
-FROM winowang/jupyter_gpu:cuda9.2-latest
+#FROM winowang/jupyter_gpu:cuda9.2-latest
+FROM winowang/jupyter_gpu:cuda10.1
 #FROM winowang/dockerfile_test:cuda92-latest
 
 LABEL maintainer="Jupyter Mxnet"
@@ -30,8 +31,8 @@ RUN conda install --yes \
 #RUN pip install mxnet-cu92
 RUN pip install graphviz
 RUN pip install numpy
-RUN pip install mxnet-cu92mkl
-#RUN pip install mxnet
+#RUN pip install mxnet-cu92mkl
+RUN pip install mxnet-cu101mkl
 
 RUN pip install mxboard 
 
