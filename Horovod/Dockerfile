@@ -6,7 +6,7 @@ LABEL maintainer="Jupyter Tensorflow"
 RUN pip install numpy \
                jupyter \
                scipy \
-               opencv \
+               opencv-python \
                matplotlib
 
 RUN mkdir /etc/jupyter/ && wget -P /etc/jupyter/  https://raw.githubusercontent.com/jupyter/docker-stacks/master/base-notebook/jupyter_notebook_config.py
