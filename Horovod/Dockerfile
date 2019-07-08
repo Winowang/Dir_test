@@ -9,6 +9,8 @@ RUN pip install numpy \
                 jupyterlab \
                 scipy \
                 opencv-python \
+                tensorboardX \
+                mxboard  \
                 matplotlib
 
 RUN mkdir /etc/jupyter/ && wget -P /etc/jupyter/  https://raw.githubusercontent.com/jupyter/docker-stacks/master/base-notebook/jupyter_notebook_config.py
