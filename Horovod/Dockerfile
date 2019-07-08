@@ -5,6 +5,7 @@ LABEL maintainer="Jupyter Horovod"
 
 RUN pip install numpy \
                 jupyter \
+                jupyterlab \
                 scipy \
                 opencv-python \
                 matplotlib
